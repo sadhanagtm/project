@@ -1,4 +1,5 @@
 body{
+    background-color: rgb(230, 227, 227);
     margin: 0px;
     padding: 0px;
 }
@@ -15,7 +16,7 @@ body{
     gap: 20px;
 padding: 10px;
 position: fixed;
-z-index:1;
+z-index:2;
 box-shadow:   1px 2px 5px white;
 }
 .applelogo{
@@ -51,9 +52,10 @@ margin: 50px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-#imgone.hover{
-    transition: transformX(80%);
-    transition-delay: 100ms;
+#imgone:hover{
+    /* transition: transformX(80%); */
+    transform: scale(1.02);
+   transition: transform .3ms ease-in-out;
 }
 a{
     color: white;
@@ -290,10 +292,13 @@ botton{
 
 }
 .gauvaone{
-    background-color: greenyellow;
+    /* background-color: rgba(76, 93, 129,.5); */
     height: 90%;
     color: white;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     position: relative;
     overflow: none;
     z-index: 1;
@@ -305,9 +310,9 @@ botton{
     content: "";
     
     position: absolute;
-    border-left: 170 solid greenyellow;
+    /* border-left: 170 solid rgba(76, 93, 129,.5); */
     border-right:170px solid transparent;
-    border-top: 170px solid greenyellow;
+    /* border-top: 170px solid rgba(76, 93, 129,.5); */
     border-bottom: 170px solid transparent;
     z-index: 1;
     right: -160px;
@@ -336,13 +341,96 @@ botton{
     left: -150px;
     bottom: 0px;
 }
+.higher{
+font-size: 40px;
+font-weight: 1000px;
+width: 350px;
+text-shadow: 2px 2px 2px black;
+color: rgb(243, 243, 82);
+    
+
+}
+.higherone button{
+    height: 30px;
+    width: 300px;
+    border: none;
+    background-color:rgba(76, 93, 129,.5);
+    color: black;
+    font-size: 14px;
+}
+.highertwo{
+    display: flex;
+    flex-direction: row;
+width: 300px;
+/* border: 1px solid red; */
+justify-content: center;
+gap: 5px;
+}
+.higherimgone{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
 .highered{
+    height: 265px;
+    /* top: 0px; */
     position: absolute;
     z-index: 1;
-    background-color: blue;
+    /* background-color: blue; */
+   width: 350px;
+   right: 70px;
+   /* border: 3px solid red; */
 }
-/* .pine{
+.higheredone{
+    /* margin-left: 20px; */
+    width: fit-content;
+    height: fit-content;
+    font-size:10px;
+    color:gray ;
+    text-shadow: 2px 2px 2px solid black;
+    font-weight: 400px;
+    /* background-color: green; */
+}
+.higheredtwo{
+    margin-left: 15px;
+    /* margin-top: 20px; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 5px;
+    height: 250px;
+    width: fit-content;
+    /* border: black 2px solid; */
+
+}
+input{
+border: 1px solid rgb(228, 223, 223);
+background-color: rgb(228, 223, 223);
+height: 20px;
+width: 250px;
+border-radius: 70px;
+}
+label{
+    color: gray;
+}
+.b1{
+    margin-left: 77px;
+    border: none;
+    /* padding: 15px; */
+    height: 25px;
+    width: 100px;
+    border-radius: 50px;
+background-color: rgba(76, 93, 129,.5);
+}
+.pine{
     height: 400px;
     width: 100%;
     background-color: pink;
-} */
+}
+.pineone{
+    height: 200px;
+    width: 100%;
+border: 3px solid red;
+}
