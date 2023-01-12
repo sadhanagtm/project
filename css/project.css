@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(230, 227, 227);
+    /* background-color: rgb(206, 203, 203); */
     margin: 0px;
     padding: 0px;
 }
@@ -275,7 +275,8 @@ botton{
     align-items: center;
     height: 100px;
     width: 100%;
-    /* background-color: white; */
+    color: gray;
+    /* background-color:gray; */
     font-size: 30px;
 
 }
@@ -425,12 +426,148 @@ label{
 background-color: rgba(76, 93, 129,.5);
 }
 .pine{
-    height: 400px;
+    /* border: 2px solid gray; */
+    height: fit-content;
     width: 100%;
-    background-color: pink;
+    /* background-color: rgb(170, 191, 238); */
 }
-.pineone{
-    height: 200px;
+.pineupper{
+    height: 90px;
+    font-style: initial;
+    text-shadow: 2px 2px 5px rgb(133, 131, 131);
     width: 100%;
-border: 3px solid red;
+    background-color: white;
+/* border: 3px solid red; */
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-direction: row;
+}
+.pineupperone{
+    color: gray;
+    font-size: 35px;
+    font-weight: 400;
+}
+.pineuppertwo{
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(48, 42, 42);
+}
+.pinelower{
+    border: 1.5px solid gray;
+    height: fit-content;
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -1;
+}
+
+.pinereviewone{
+    display: grid;
+grid-template-columns: 65% 35%;
+    height: 200px;
+    width: 90%;
+    /* border: 3px solid green; */
+    /* place-items: center; */
+    place-content: center;
+
+}
+.reviewleft{
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    border-radius:150px ;
+    /* place-items: center;
+    place-content: center; */
+}
+.reviewright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: bisque;
+    height:180px;
+    width: 450px;
+    /* padding: 10px; */
+    border-radius: 100px;
+    position: relative;
+    z-index: 1;
+}
+.aa{
+    color: black;
+    width: 70%;
+}
+.reviewright::after{
+    height: 50px;
+    width: 50px;
+    background-color: bisque;
+    contain: "";
+    content: "";
+    position: absolute;
+    right : -15px;
+    bottom: 60px;
+    transform: rotate(45deg);
+z-index: -1;
+
+}
+.pinereviewtwo{
+    display: grid;
+grid-template-columns:35% 65%;
+    height: 200px;
+    width: 90%;
+    /* border: 3px solid green; */
+    /* place-items: center; */
+    place-content: center;
+}
+.secondleft{
+background-color: aqua;
+    height: 150px;
+    width: 150px;
+    border-radius:150px ;
+}
+.secondright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: skyblue;
+    height:180px;
+    width: 450px;
+    /* padding: 10px; */
+    border-radius: 100px;
+    position: relative;
+    z-index: 1;
+}
+.secondright::after{
+    height: 50px;
+    width: 50px;
+    background-color: skyblue;
+    contain: "";
+    content: "";
+    position: absolute;
+    left : -15px;
+    bottom: 60px;
+    transform: rotate(45deg);
+z-index: -1;
+}
+#ba{
+    background-image: url(../pics/img11);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bb{
+    background-image: url(../pics/img12);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bc{
+    background-image: url(../pics/img13);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
