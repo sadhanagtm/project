@@ -638,3 +638,48 @@ text-align: center;
     background-repeat: no-repeat;
     /* background-color: red; */
 }
+.starfruit{
+    height: 250px;
+    width: 100%;
+   /* gap:30px; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.starfruitone{
+    background-image: url(../pics/pngwing.com\ \(20\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.starfruittwo{
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.starfruitred{
+    color: rgb(96, 96, 129);
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    width: 350px;
+    height: fit-content;
+}
+.starfruitredone{
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    color: gray;
+}
+.starfruitbutton{
+    height: 26px;
+    width: fit-content;
+    border: none;
+    color: white;
+    background-color: rgba(96, 96, 129,.7);
+    /* border-radius: 10px; */
+}
