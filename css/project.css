@@ -1,5 +1,5 @@
 body{
-    /* background-color: rgb(206, 203, 203); */
+    background-color: rgba(206, 203, 203,.3);
     margin: 0px;
     padding: 0px;
 }
@@ -456,7 +456,8 @@ flex-direction: row;
     color: rgb(48, 42, 42);
 }
 .pinelower{
-    border: 1.5px solid gray;
+    border: 1px solid gray;
+    border-bottom: none;
     height: fit-content;
     width: 100%;
     /* background-color: pink; */
@@ -570,4 +571,70 @@ z-index: -1;
     background-image: url(../pics/img13);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.litchi{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+/* background-color: greenyellow; */
+}
+.litchiupper{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.litchired{
+    color: rgb(98, 98, 173);
+    font-size: 30px;
+    font-weight: 600;
+}
+.litchiredone{
+    color: orange;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.litchilower{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+text-align: center;
+}
+.litchiredtwo{
+    width: 65%;
+    font-size: 15px;
+}
+.banana{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: azure;
+
+}
+.bananaone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    width: 100%;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    position: relative;
+    top: 0px;
+}
+.bananatwo{
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    background-image: url(../pics/pngwing.com\ \(19\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: red; */
 }
