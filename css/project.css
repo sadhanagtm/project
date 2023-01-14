@@ -1,15 +1,16 @@
 body{
-    background-color: rgba(206, 203, 203,.3);
+    background-color: rgb(221, 212, 212);
     margin: 0px;
     padding: 0px;
 }
 .hi{
     margin-top: 20px;
+    margin-left: 50px;
     background-position: cover;
     height: 40px;
-    width: 100%;
-    background-color:rgba(247, 240, 240,.5);
-    background-image: url(../pics/pngwing.com\ \(9\).png);
+    width: 80%;
+    background-color:rgba(206, 202, 202, 0.5);
+    /* background-image: url(../pics/pngwing.com\ \(9\).png); */
     background-position: right;
     display: flex;
     align-items: center;
@@ -20,32 +21,45 @@ z-index:2;
 box-shadow:   1px 2px 5px white;
 }
 .applelogo{
-    height: 60px;
-    width: 100px;
-    background-color: rgba(137, 137, 206);
-margin: 50px;
+    height: 62px;
+    width: 90px;
+    /* background-color: rgba(137, 137, 206); */
+margin: 20px;
     background-image: url(../pics/aribt.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.search{
+    margin-left: 5px;
+    height: 30px;
+    width: 25px;
+    background-image: url(../pics/pngwing.com\ \(27\).png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .apple{
     height: 30px;
     width: 50%;
-    background-color: rgba(223, 217, 217,.3);
+    background-color: rgba(160, 145, 145, 0.3);
     border-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     top: 0px;
 }
 .appleimg{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     /* border: 1px solid black; */
     transform: translateX(40%);
     transition-delay: 20mm;
+}
+.imageholder{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 #imgone{
    background-image: url(../pics/pngwing.com\ \(12\).png);
@@ -54,8 +68,8 @@ margin: 50px;
 }
 #imgone:hover{
     /* transition: transformX(80%); */
-    transform: scale(1.02);
-   transition: transform .3ms ease-in-out;
+    transform: scale(.3);
+   transition: transform .5ms ease-in-out;
 }
 a{
     color: white;
@@ -63,20 +77,36 @@ a{
 }
 #imgtwo{
     background-image: url(../pics/pngwing.com\ \(16\).png);
-    background-size: contain;
+    background-size: 90%;
+    background-position: center;
     background-repeat: no-repeat;
+}
+#imgtwo:hover{
+    /* transition: transformX(80%); */
+    transform: scale(.3);
+   transition: transform .5ms ease-in-out;
 }
 #imgthree{
     background-image: url(../pics/pngwing.com\ \(14\).png);
     background-size: cover;
     background-repeat: no-repeat;
 }
+#imgthree:hover{
+    /* transition: transformX(80%); */
+    transform: scale(.3);
+   transition: transform .5ms ease-in-out;
+}
 #imgfour{
-    border: none;
-    background-image: url(../pics/pngwing.com\ \(15\).png);
-    background-size:calc(20px);
+    /* border: none; */
+    background-image: url(../pics/pngwing.com\ \(26\).png);
+    background-size:cover;
 
     background-repeat: no-repeat;
+}
+#imgfour:hover{
+    /* transition: transformX(80%); */
+    transform: scale(.3);
+   transition: transform .5ms ease-in-out;
 }
 .orange{
     /* background-color: yellow; */
@@ -87,18 +117,18 @@ a{
 }
 .orangeupper{
 
-    height: 380px;
+    height: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    background-image: url(../pics/img10);
-    background-repeat: no-repeat;
+    background-image: url(../pics/pngwing.com\ \(29\).png);
+    /* background-repeat: no-repeat; */
     background-size: cover;
-    background-position: center;
-    /* background-color: rgba(58, 131, 204,.4); */
+    background-position: bottom;
+    background-color: white;
     bottom: 0px;
     
 }
@@ -261,8 +291,8 @@ botton{
 }
 .gauva{
     /* margin-top: 70px; */
-    height: 400px;
-    width: 100%;
+    height: fit-content;
+    width: 98%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -273,18 +303,18 @@ botton{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 200px;
     width: 100%;
     color: gray;
     /* background-color:gray; */
-    font-size: 30px;
+    font-size: 35px;
 
 }
 .gauvalower{
     
     height: 300px;
     width: 90%;
-    background-color:  rgba(76, 93, 129,.6);
+    background-color:  rgba(76, 93, 129,.7);
     display: grid;
     grid-template-columns: 50% 50%;
    margin: 0px auto;
@@ -293,19 +323,21 @@ botton{
 
 }
 .gauvaone{
-    /* background-color: rgba(76, 93, 129,.5); */
+    /* background-color:rgba(103, 112, 131,.1); */
     height: 90%;
     color: white;
     width: 90%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
-    position: relative;
+    /* position: relative; */
     overflow: none;
     z-index: 1;
     /* overflow: hidden; */
 }
-.gauvaone::before{
+/* .gauvaone::before{ */
     contain: "";
     content: "";
     content: "";
@@ -318,17 +350,18 @@ botton{
     z-index: 1;
     right: -160px;
     top: 0px;
-}
+/* } */
 .gauvatwo{
-    background-color: white;
+    /* background-color: white; */
     height: 90%;
     color: white;
     width: 90%;
+    /* border: 1px solid black; */
     position: relative;
     overflow: none;
     /* z-index: 1; */
 }
-.gauvatwo::before{
+/* .gauvatwo::before{
     contain: "";
     content: "";
     content: "";
@@ -341,13 +374,14 @@ botton{
     z-index: 1;
     left: -150px;
     bottom: 0px;
-}
+} */
 .higher{
-font-size: 40px;
-font-weight: 1000px;
+font-size: 38px;
+font-weight: 900px;
 width: 350px;
-text-shadow: 2px 2px 2px black;
-color: rgb(243, 243, 82);
+text-align: center;
+text-shadow: 2px 2px 2px rgb(228, 212, 212);
+color: rgb(226, 226, 134);
     
 
 }
@@ -363,15 +397,40 @@ color: rgb(243, 243, 82);
     display: flex;
     flex-direction: row;
 width: 300px;
+height: 35px;
 /* border: 1px solid red; */
 justify-content: center;
-gap: 5px;
+gap: 10px;
 }
+#ca{
+    background-image: url(../pics/pngwing.com\ \(23\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#cb{
+    background-image: url(../pics/pngwing.com\ \(24\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#cc{
+    background-image: url(../pics/pngwing.com\ \(22\).png);
+    background-repeat: no-repeat;
+    /* background-color: black; */
+    background-size: 115%;
+    background-position: center;
+}
+#cd{
+    background-image: url(../pics/pngwing.com\ \(25\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
 .higherimgone{
     height: 30px;
     width: 30px;
     border-radius: 30px;
-    border: 1px solid gray;
+    /* border: 1px solid white; */
 }
 .highered{
     height: 265px;
@@ -388,7 +447,7 @@ gap: 5px;
     width: fit-content;
     height: fit-content;
     font-size:10px;
-    color:gray ;
+    /* color:black; */
     text-shadow: 2px 2px 2px solid black;
     font-weight: 400px;
     /* background-color: green; */
@@ -407,14 +466,14 @@ gap: 5px;
 
 }
 input{
-border: 1px solid rgb(228, 223, 223);
-background-color: rgb(228, 223, 223);
+border: 1px solid rgba(167, 164, 164,.4);
+background-color: rgba(224, 220, 220, 0.4);
 height: 20px;
 width: 250px;
 border-radius: 70px;
 }
 label{
-    color: gray;
+    color: white;
 }
 .b1{
     margin-left: 77px;
@@ -423,16 +482,16 @@ label{
     height: 25px;
     width: 100px;
     border-radius: 50px;
-background-color: rgba(76, 93, 129,.5);
+background-color: rgba(76, 93, 129,.4);
 }
 .pine{
     /* border: 2px solid gray; */
     height: fit-content;
-    width: 100%;
+    width: 99%;
     /* background-color: rgb(170, 191, 238); */
 }
 .pineupper{
-    height: 90px;
+    height: 150px;
     font-style: initial;
     text-shadow: 2px 2px 5px rgb(133, 131, 131);
     width: 100%;
@@ -578,7 +637,7 @@ z-index: -1;
     flex-direction: column;
     gap: 15px;
     height: 150px;
-    width: 100%;
+    width: 99%;
     justify-content: center;
     align-items: center;
 /* background-color: greenyellow; */
@@ -613,8 +672,8 @@ text-align: center;
 .banana{
     display: flex;
     align-items: center;
-    height: 50px;
-    width: 100%;
+    height: 100px;
+    width: 99%;
     background-color: azure;
 
 }
@@ -640,7 +699,7 @@ text-align: center;
 }
 .starfruit{
     height: 250px;
-    width: 100%;
+    width: 99%;
    /* gap:30px; */
     background-size: contain;
     background-repeat: no-repeat;
@@ -662,7 +721,6 @@ text-align: center;
 }
 .starfruitred{
     color: rgb(96, 96, 129);
-    text-align: center;
     padding: 10px;
     font-size: 40px;
     font-weight: 700;
@@ -676,10 +734,139 @@ text-align: center;
     color: gray;
 }
 .starfruitbutton{
+    background-color: rgba(92, 92, 173,.5);
     height: 26px;
+    color: white;
     width: fit-content;
     border: none;
-    color: white;
-    background-color: rgba(96, 96, 129,.7);
     /* border-radius: 10px; */
+}
+.dragon{
+    padding: 10px;
+    display: flex;
+    /* gap: 10px; */
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+    height: 150px;
+    width: 97%;
+    background-color: rgba(59, 55, 55,.5);
+    color: white;
+}
+.dragonone{
+    /* border: 2px solid black; */
+    height: 80%;
+    width: 20%;
+}
+#red{
+    /* padding: 5px; */
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.redone{
+    font-size: 25px;
+}
+.redtwo{
+    width: 80%;
+    font-size: 10px;
+}
+.redtwobutton{
+    width: fit-content;
+    color: gray;
+    font-size: 10px;
+    border: none;
+    margin-left: 20px;
+}
+#yellow{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.yellowone{
+    font-size: 25px;
+    font-weight: 700;
+}
+.yellowtwo{
+    gap:2px;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+   
+    /* background-image: url(../); */
+}
+.yellowfour{
+    /* background-color: aqua; */
+    background-image: url(../pics/pngwing.com\ \(21\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 30px;
+}
+/* #pink{ */
+    /* padding: 5px; */
+/* } */
+.pinkone{
+    /* padding: 5px; */
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.pinktwo{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 10px;
+}
+.blueone{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.bluetwo{
+    height: 30px;
+    width: 90%;
+    display: flex;
+    gap:5px;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    flex-direction: row;
+}
+.bluethree{
+    height: 25px;
+    width: 30px;
+    /* border: 1px solid green; */
+}
+#blueimgone{
+    background-image: url(../pngwing.com\ \(22\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#blueimgtwo{
+    background-image: url(../pics/pngwing.com\ \(23\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#blueimgthree{
+    background-image: url(../pics/pngwing.com\ \(24\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#blueimgfour{
+    background-image: url(../pics/pngwing.com\ \(25\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.logoend{
+    margin-top: 20px;
+    height: 50px;
+    width: 80%;
+    display: flex;
+background-position: center;
+    /* border: 1px solid black; */
+    background-image: url(../pics/aribt.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
