@@ -1141,18 +1141,19 @@ flex-direction: column;
             height: 20px;
         }
         .dragon{
-            padding: 0px;
+            /* padding: 0px; */
             display: flex;
             /* gap: 10px; */
             flex-direction: row;
             justify-content: center;
             margin-top: 80px;
             height: 150px;
-            width: 97%;
+            width: 95%;
             background-color: rgba(59, 55, 55,.5);
             color: white;
         }
         .dragonone{
+            background-color: green;
             height: 80%;
             width: 23%;
         }
